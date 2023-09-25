@@ -76,6 +76,7 @@ h2 {
 .columna {
     display: flex;
     gap: 20px;
+    margin-bottom: 20px;
 }
 .bienvenidos {
     width: 75%;
@@ -83,9 +84,22 @@ h2 {
 
 .testimonios {
     width: 25%;
+    height: 160px;
 }
 
 .testimonio {
     background-color: #ddd;
-    padding: 16px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.cita {
+    font-weight: bold;
+    font-style:italic;
+    margin-bottom: 7px;
+}
+
+.autor {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
 }
