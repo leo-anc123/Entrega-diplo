@@ -66,13 +66,17 @@ footer {
 }
 
 .holder {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
 h2 {
     color: #2e64a1;
     font-weight: 400;
+}
+
+.homeimg img {
+    max-width: 100%;
 }
 
 .columna {
@@ -231,4 +235,29 @@ h2 {
     align-items: flex-start;
 } */
 /*FIN CONTACTO */
+
+@media screen and (max-width:768px) {
+    .holder {
+        padding: 0 10px;
+    }
+    nav ul.holder {
+     padding: 0;
+    }
+}
+@media screen and (max-width:550px) {
+   .columna {
+    flex-direction: column;
+   }
+
+   .bienvenidos, 
+   .testimonios {
+    width: 100%;
+   }
+
+   .testimonio {
+    max-width: 220px;
+    margin: 0 auto;
+   }
+}
+
 
