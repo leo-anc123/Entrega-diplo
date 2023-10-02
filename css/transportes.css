@@ -236,6 +236,67 @@ h2 {
 } */
 /*FIN CONTACTO */
 
+/*INICIO SERVICIOS*/
+.transporte1, .transporte2, .transporte3 {
+    display: flex;
+    border: 1px solid grey;
+    margin: 15px 0;
+    border-radius: 10px;
+    position: relative;
+    padding: 0 20px;
+}
+.transporte1 img,
+.transporte2 img,
+.transporte3 img {
+    border-radius: 10px;
+    width: 160px;
+    height: 140px;
+    position: absolute;
+}
+
+.transporte1 img,
+.transporte3 img {
+    right: 55px;
+    top: 35px;
+}
+
+.transporte2 img {
+    left: 45px;
+    top: 35px;
+}
+
+.ferro {
+    left: 200px;
+    position: relative;
+}
+
+.ferro h3 {
+    position: relative;
+}
+
+h3 {
+    font-size: 19px;
+    color: #2e64a1;
+    font-style: italic;
+    border-bottom: 2px solid lightseagreen;
+    padding: 10px 0;
+    font-family: "Roboto", sans-serif ;
+}
+
+.aereo, .ferro, .maritimo {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aereo, .ferro, .maritimo p {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*FIN SERVICIOS*/
+
 @media screen and (max-width:768px) {
     .holder {
         padding: 0 10px;
@@ -258,6 +319,48 @@ h2 {
     max-width: 220px;
     margin: 0 auto;
    }
+
+   .personas {
+    flex-wrap: wrap;
+   }
+
+   .persona {
+    width: 47%;
+    margin-bottom: 10px;
+   }
+
+   .contacto {
+    flex-direction: column;
+   }
+
+   header .holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   header h1 {
+    position: static;
+   }
+
+   header .logo img {
+    max-width: 80px;
+   }
+
+   nav ul.holder {
+    flex-direction: column;
+    padding: 0;
+   }
 }
 
+@media screen and (max-width:320px) {
+    header .holder {
+        flex-direction: column;
+    }
+
+    header h1 {
+        margin: 10px;
+        font-size: 20px;
+    }
+}
 
